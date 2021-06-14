@@ -1,11 +1,12 @@
-package ex39;
+/*
+ *  UCF COP3330 Summer 2021 Assignment 2 Solution
+ *  Copyright 2021 Abdel Nabut
+ */
 
+
+package ex39;
 import java.util.*;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static Comparator<Map<String, String>> mapComparator = new Comparator<Map<String, String>>() {
@@ -65,7 +66,7 @@ public class App
         for(HashMap<String, String> record : records) {
             System.out.printf("%-20s | %-20s | %-20s\n", "Name", "Position", "Separation Date");
             System.out.println("---------------------|----------------------|-----------------");
-            System.out.printf("%s %s | %20s | %20s\n", record.get("First Name"), record.get("Last Name"), record.get("Position"), record.get("Separation Date"));
+            System.out.printf("%s %-15s | %-20s | %-20s\n", record.get("First Name"), record.get("Last Name"), record.get("Position"), record.get("Separation Date"));
             /*System.out.printf("| Position %10s", "");
             System.out.printf("| Separation Date %20s \n", "");
             System.out.printf("-------------------------");
@@ -76,7 +77,5 @@ public class App
             System.out.printf("| %s %10s\n", record.get("Separation Date"), "");*/
 
         }
-
-        System.out.println( "Hello World!" );
     }
 }
