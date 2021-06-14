@@ -63,15 +63,17 @@ public class App
         Collections.sort(records, mapComparator);
 
         for(HashMap<String, String> record : records) {
-            System.out.printf("Name %20s", "");
-            System.out.printf("| Position %10s", "");
+            System.out.printf("%-20s | %-20s | %-20s\n", "Name", "Position", "Separation Date");
+            System.out.println("---------------------|----------------------|-----------------");
+            System.out.printf("%s %s | %20s | %20s\n", record.get("First Name"), record.get("Last Name"), record.get("Position"), record.get("Separation Date"));
+            /*System.out.printf("| Position %10s", "");
             System.out.printf("| Separation Date %20s \n", "");
-            System.out.printf("---------------");
-            System.out.printf("|%20s ", "-------------");
-            System.out.printf("|%20s \n", "------------------");
+            System.out.printf("-------------------------");
+            System.out.printf("|%s ", "-------------------");
+            System.out.printf("|----------------------- \n");
             System.out.printf("%s %s %10s", record.get("First Name"), record.get("Last Name"), "");
             System.out.printf("| %s %10s", record.get("Position"), "");
-            System.out.printf("| %s %10s\n", record.get("Separation Date"), "");
+            System.out.printf("| %s %10s\n", record.get("Separation Date"), "");*/
 
         }
 
